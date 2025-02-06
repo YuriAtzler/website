@@ -14,10 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="relative min-w-screen min-h-screen overflow-y-auto">
+      <body className="relative">
         <NavBar />
         {children}
-        <footer>footer</footer>
+        <footer className="w-full p-6 bg-gray-4">footer</footer>
       </body>
     </html>
   );

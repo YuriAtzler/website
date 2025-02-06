@@ -2,7 +2,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="w-screen h-screen flex items-center justify-center bg-[url('https://placehold.co/4000x4000')] bg-cover bg-center bg-no-repeat"
+      className="h-screen w-full flex items-center justify-center bg-[url('https://placehold.co/4000x4000')] bg-cover bg-center bg-no-repeat"
     >
       <div className="container w-full grid grid-cols-12">
         <div className="col-span-8 flex flex-col gap-3">

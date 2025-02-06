@@ -2,10 +2,10 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="w-screen py-24 flex items-center justify-center"
+      className="w-full py-24 flex items-center justify-center"
     >
       <div className="container w-full grid grid-cols-12">
-        <div className="col-span-6 p-6 flex flex-col gap-3">
+        <div className="col-span-6 flex flex-col gap-3">
           <h1 className="text-4xl">Bem vindo a mint</h1>
           <p className="text-lg font-bold">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -33,7 +33,7 @@ export function AboutSection() {
             aut amet a sapiente sit ad? Ut tenetur animi impedit ab totam quos!
           </p>
         </div>
-        <div className="col-span-6 p-6 flex justify-center items-center">
+        <div className="col-span-6 flex justify-center items-center">
           <div className="w-full aspect-square rounded bg-[url('https://placehold.co/4000x4000')] bg-cover bg-center bg-no-repeat"></div>
         </div>
       </div>
