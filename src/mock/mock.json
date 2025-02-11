@@ -1,0 +1,166 @@
+[
+    {
+      "id": 1,
+      "type": "navbar",
+      "order": 0,
+      "content": {
+        "type": "navbar",
+        "content": {
+          "_title": "My App",
+          "_logo": "https://cdn.vuetifyjs.com/images/logos/logo.svg",
+          "_items": [
+            {
+              "_title": "Home",
+              "_link": "/"
+            },
+            {
+              "_title": "About",
+              "_link": "/about"
+            },
+            {
+              "_title": "Contact",
+              "_link": "/contact"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 2,
+      "type": "section",
+      "order": 1,
+      "content": {
+        "type": "hero_section",
+        "content": {
+          "_title": "Welcome",
+          "_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "_video": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+          "_background_image": {
+            "_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
+            "_alt": "Sunshine"
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "section",
+      "order": 2,
+      "content": {
+        "type": "about_section",
+        "content": {
+          "_title": "About Us",
+          "_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "_content_1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut felis auctor malesuada. Nullam nec purus ut felis auctor malesuada. Nullam nec purus ut felis auctor malesuada.",
+          "_content_2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut felis auctor malesuada. Nullam nec purus ut felis auctor malesuada. Nullam nec purus ut felis auctor malesuada.",
+          "_content_3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ut felis auctor malesuada. Nullam nec purus ut felis auctor malesuada. Nullam nec purus ut felis auctor malesuada.",
+          "_content_4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+      }
+    },
+    {
+      "id": 4,
+      "type": "section",
+      "order": 3,
+      "content": {
+        "type": "gallery_section",
+        "content": {
+          "_title": "Our Services",
+          "_items": [
+            {
+              "_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
+              "_alt": "Sunshine"
+            },
+            {
+              "_url": "https://cdn.vuetifyjs.com/images/cards/halcyon.png",
+              "_alt": "Halcyon"
+            },
+            {
+              "_url": "https://cdn.vuetifyjs.com/images/cards/forest.jpg",
+              "_alt": "Forest"
+            },
+            {
+              "_url": "https://cdn.vuetifyjs.com/images/cards/desert.jpg",
+              "_alt": "Desert"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "section",
+      "order": 4,
+      "content": {
+        "type": "budget_section",
+        "content": {
+          "_title": "Get a Quote",
+          "_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "_items": [
+            {
+              "_title": "Item 1",
+              "_image": {
+                "_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
+                "_alt": "Sunshine"
+              },
+              "_price": "100"
+            },
+            {
+              "_title": "Item 2",
+              "_image": {
+                "_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
+                "_alt": "Sunshine"
+              },
+              "_price": "200"
+            },
+            {
+              "_title": "Item 3",
+              "_image": {
+                "_url": "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
+                "_alt": "Sunshine"
+              },
+              "_price": "300"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "type": "footer",
+      "order": 5,
+      "content": {
+        "type": "footer",
+        "content": {
+          "_title": "Contact Us",
+          "_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "_address": "1234 Main St, Springfield, IL 62701",
+          "_phone": "555-555-5555",
+          "_email": "example@gmail.com",
+          "_social": [
+            {
+              "_type": "facebook",
+              "_title": "Facebook",
+              "_link": "https://www.facebook.com/"
+            },
+            {
+              "_type": "twitter",
+              "_title": "Twitter",
+              "_link": "https://twitter.com/"
+            },
+            {
+              "_type": "instagram",
+              "_title": "Instagram",
+              "_link": "https://www.instagram.com/"
+            },
+            {
+              "_type": "linkedin",
+              "_title": "LinkedIn",
+              "_link": "https://www.linkedin.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+  
