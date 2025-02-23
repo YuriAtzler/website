@@ -5,11 +5,14 @@ import { CarouselSection } from "@/components/templates/carousel-section";
 import { HeroSection } from "@/components/templates/hero-section";
 import { MenuSection } from "@/components/templates/menu-section";
 
+import mock from "@/mock/mock.json";
+import type { HeroSectionType } from "@/types/templates/hero-section.type";
+
 export default function Home() {
   return (
     <main>
       <ContainerPage>
-        <HeroSection />
+        <HeroSection {...(mock[0] as HeroSectionType)} />
         <AboutSection />
         <CardsSection />
         <MenuSection />
