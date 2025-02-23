@@ -37,6 +37,7 @@ export function AboutSection() {
           </p>
         </article>
         <figure
+          data-aos="zoom-in-down"
           className="col-span-6 border-4 border-gray-6 flex justify-center items-center"
           role="img"
           aria-label="Imagem ilustrativa"

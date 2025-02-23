@@ -7,4 +7,11 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
   plugins: [tailwindcssRadixColors],
+  theme: {
+    extend: {
+      fontFamily: {
+        playfair: "var(--font-playfair)",
+      },
+    },
+  },
 } satisfies Config;

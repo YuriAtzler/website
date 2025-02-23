@@ -13,18 +13,25 @@ export function CardsSection() {
           </h1>
         </div>
         <div className="grid grid-cols-3 gap-3 justify-center">
-          <Card />
-          <Card />
-          <Card />
+          <Card index={0} />
+          <Card index={1} />
+          <Card index={2} />
+          <Card index={3} />
+          <Card index={4} />
+          <Card index={5} />
         </div>
       </div>
     </section>
   );
 }
 
-function Card() {
+function Card({ index }: { index: number }) {
   return (
-    <div className="col-span-1 px-6 py-10 bg-gray-3 gap-3 flex flex-col">
+    <div
+      data-aos="zoom-in-down"
+      data-aos-delay={100 * index}
+      className="col-span-1 px-6 py-10 bg-gray-3 gap-3 flex flex-col"
+    >
       <h1 className="text-xl font-bold">01</h1>
       <h3 className="text-lg">Lorem ipsum dolor!</h3>
       <span className="text-xs">
