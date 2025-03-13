@@ -1,15 +1,38 @@
-[
-  {
-    "type": "hero_section",
-    "navbar_name": "Home",
-    "title": "Welcome to the website",
-    "subtitle": "This is a subtitle",
-    "background": {
-      "image_url": "https://images.pexels.com/photos/612790/pexels-photo-612790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      "color": ""
+{
+  "navbar_config": {
+    "style": "full"
+  },
+  "content": [
+    {
+      "type": "hero_section",
+      "navbar_name": "Home",
+      "title": "Welcome to the website",
+      "subtitle": "This is a subtitle",
+      "background": {
+        "image_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "color": ""
+      },
+      "content": {
+        "video_play": {
+          "url": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        }
+      }
     },
-    "video_play": {
-      "url": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    {
+      "type": "about_section",
+      "navbar_name": "Sobre",
+      "title": "Bem-vindo à Mint",
+      "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus",
+      "background": {
+        "image_url": "",
+        "color": ""
+      },
+      "content": {
+        "about": {
+          "html_content": "<p>lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quosvoluptates, quae, quidem quibusdam quia quod quas quae quidem quibusdam quia quod</p><p>quas quae quidem quibusdam quia quod quas quae quidem quibusdam quia quod quas quae quidem quibusdam quia quod quas quae quidem quibusdam quia quod quas quae quidem quibusdam quia quod quas quae quidem quibusdam quia quod quas quae quidem quibusdam quia quod quas quae quidem quibusdam quia quod quas quae quidem quibusdam quia quod quas quae quidem quibusdam quia quod quas quae quidem quibusdam quia quod quas quae quidem quibusdam quia quod quas quae quidem quibusdam quia quod quas quae quidem </p>",
+          "picture_url": "https://images.pexels.com/photos/612790/pexels-photo-612790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        }
+      }
     }
-  }
-]
+  ]
+}

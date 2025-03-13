@@ -10,5 +10,5 @@ export function ContainerPage({ children }: PropsWithChildren) {
     AOS.init();
   }, []);
 
-  return children;
+  return <main>{children}</main>;
 }
