@@ -10,6 +10,7 @@ import { Textarea } from "@heroui/input";
 import { DatePicker } from "@heroui/date-picker";
 import { NumberInput } from "@heroui/number-input";
 
+import { addToast } from "@heroui/toast";
 export const animals = [
   { key: "cat", label: "Cat" },
   { key: "dog", label: "Dog" },
@@ -86,7 +87,15 @@ export function BudgetSection() {
           placeholder="Digite sua observacao"
           label="Observacao"
         />
-        <Button>Enviar</Button>
+        <Button
+          onPress={() => {
+            addToast({
+              title: "Toast Title",
+            });
+          }}
+        >
+          Enviar
+        </Button>
       </div>
     </ContainerSection>
   );
