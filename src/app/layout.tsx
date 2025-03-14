@@ -22,10 +22,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const res = await fetch("http://localhost:3000/api/pages");
-  const posts = await res.json();
-  console.log(posts);
-
   return (
     <html lang="en" className={playfair.variable}>
       <body className={`${inter.variable} ${playfair.variable}`}>

@@ -9,7 +9,11 @@ import { MenuSection } from "@/components/templates/menu-section";
 import mock from "@/mock/mock.json";
 import { TemplateType } from "@/types/common.type";
 
-export default function Home() {
+export default async function Home() {
+  const res = await fetch("http://localhost:3000/api/pages");
+  const posts = await res.json();
+  console.log(posts);
+
   return (
     <ContainerPage>
       <HeroSection {...(mock.content[0] as TemplateType)} />
