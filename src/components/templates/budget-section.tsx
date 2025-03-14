@@ -8,7 +8,6 @@ import { RadioGroup, Radio } from "@heroui/radio";
 import { Select, SelectItem } from "@heroui/select";
 import { Textarea } from "@heroui/input";
 import { DatePicker } from "@heroui/date-picker";
-import { NumberInput } from "@heroui/number-input";
 
 import { addToast } from "@heroui/toast";
 export const animals = [
@@ -30,11 +29,10 @@ export const animals = [
 export function BudgetSection() {
   return (
     <ContainerSection>
-      <div className="container grid grid-cols-4 gap-3">
+      <div className="container grid grid-cols-4 gap-6">
         <Select
           className="max-w-xs"
           variant="bordered"
-          size="sm"
           placeholder="Select an animal"
         >
           {animals.map((animal) => (
@@ -45,18 +43,16 @@ export function BudgetSection() {
           className="max-w-xs"
           placeholder="Select an animal"
           variant="bordered"
-          size="sm"
         >
           {animals.map((animal) => (
             <SelectItem key={animal.key}>{animal.label}</SelectItem>
           ))}
         </Select>
-        <DatePicker size="sm" variant="bordered" />
+        <DatePicker variant="bordered" />
         <Input
           type="number"
-          placeholder="Digite um valor"
+          placeholder="Quantiade de pessoas"
           variant="bordered"
-          size="sm"
         />
 
         <CheckboxGroup
@@ -64,7 +60,6 @@ export function BudgetSection() {
           defaultValue={["buenos-aires", "london"]}
           label="Select cities"
           orientation="horizontal"
-          size="sm"
         >
           <Checkbox value="buenos-aires">Buenos Aires</Checkbox>
           <Checkbox value="sydney">Sydney</Checkbox>
@@ -77,11 +72,8 @@ export function BudgetSection() {
           className="col-span-2"
           placeholder="Buscar endereço"
           variant="bordered"
-          size="sm"
         />
-        <Button size="sm" variant="solid">
-          Buscar
-        </Button>
+        <Button variant="solid">Buscar</Button>
         <div className="flex col-span-4 p-24 bg-graydark-6 text-white items-center justify-center">
           google maps
         </div>
@@ -96,13 +88,14 @@ export function BudgetSection() {
           <Radio value="london">London</Radio>
           <Radio value="tokyo">Tokyo</Radio>
         </RadioGroup>
-        <Input type="text" placeholder="Nome" />
-        <Input type="email" placeholder="Email" />
-        <Input type="tel" placeholder="Telefone" />
+        <Input type="text" placeholder="Nome" variant="bordered" />
+        <Input type="email" placeholder="Email" variant="bordered" />
+        <Input type="tel" placeholder="Telefone" variant="bordered" />
         <Textarea
           className="col-span-4"
           placeholder="Digite sua observacao"
           label="Observacao"
+          variant="bordered"
         />
         <Button
           onPress={() => {
@@ -110,6 +103,7 @@ export function BudgetSection() {
               title: "Toast Title",
             });
           }}
+          variant="solid"
         >
           Enviar
         </Button>
