@@ -1,13 +1,16 @@
 import type { Config } from "tailwindcss";
 import tailwindcssRadixColors from "tailwindcss-radix-colors";
 
+import { heroui } from "@heroui/react";
+
 export default {
   darkMode: ["class"],
   content: [
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
-  plugins: [tailwindcssRadixColors, require("tailwindcss-animate")],
+  plugins: [tailwindcssRadixColors, require("tailwindcss-animate"), heroui()],
   theme: {
     extend: {
       fontFamily: {

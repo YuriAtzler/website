@@ -2,9 +2,9 @@ import { NavBar } from "@/components/navbar";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/footer";
-
 import mock from "@/mock/mock.json";
 import { NavBarStyle } from "@/types/components/nav-bar.type";
+import { Providers } from "./providers";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -25,12 +25,14 @@ export default async function RootLayout({
   return (
     <html lang="en" className={playfair.variable}>
       <body className={`${inter.variable} ${playfair.variable}`}>
-        <NavBar
-          style={mock.navbar_config.style as NavBarStyle}
-          links={mock.content.map((content) => content.navbar_name)}
-        />
-        {children}
-        <Footer />
+        <Providers>
+          <NavBar
+            style={mock.navbar_config.style as NavBarStyle}
+            links={mock.content.map((content) => content.navbar_name)}
+          />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

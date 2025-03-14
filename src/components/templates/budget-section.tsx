@@ -1,111 +1,92 @@
 "use client";
 
 import { ContainerSection } from "../container-section";
-import { Button } from "../ui/button";
-import { Checkbox } from "../ui/checkbox";
-import { Input } from "../ui/input";
-import { Label } from "../ui/label";
-import { RadioGroup, RadioGroupItem } from "../ui/radio-group";
-import { Select } from "../ui/select";
+import { Button } from "@heroui/button";
+import { CheckboxGroup, Checkbox } from "@heroui/checkbox";
+import { Input } from "@heroui/input";
+import { RadioGroup, Radio } from "@heroui/radio";
+import { Select, SelectItem } from "@heroui/select";
+import { Textarea } from "@heroui/input";
+import { DatePicker } from "@heroui/date-picker";
+import { NumberInput } from "@heroui/number-input";
+
+export const animals = [
+  { key: "cat", label: "Cat" },
+  { key: "dog", label: "Dog" },
+  { key: "elephant", label: "Elephant" },
+  { key: "lion", label: "Lion" },
+  { key: "tiger", label: "Tiger" },
+  { key: "giraffe", label: "Giraffe" },
+  { key: "dolphin", label: "Dolphin" },
+  { key: "penguin", label: "Penguin" },
+  { key: "zebra", label: "Zebra" },
+  { key: "shark", label: "Shark" },
+  { key: "whale", label: "Whale" },
+  { key: "otter", label: "Otter" },
+  { key: "crocodile", label: "Crocodile" },
+];
 
 export function BudgetSection() {
   return (
     <ContainerSection>
       <div className="container grid grid-cols-4 gap-3">
+        <Select className="max-w-xs" label="Select an animal">
+          {animals.map((animal) => (
+            <SelectItem key={animal.key}>{animal.label}</SelectItem>
+          ))}
+        </Select>
         <Select
-          options={[
-            {
-              label: "Casamento",
-              value: "wedding",
-            },
-            {
-              label: "Aniversário",
-              value: "birthday",
-            },
-            {
-              label: "Corporativo",
-              value: "corporate",
-            },
-            {
-              label: "Outro",
-              value: "other",
-            },
-          ]}
-          placeholder="Selecione tipo evento"
-          description="Evento"
-        />
-        <Select
-          options={[
-            {
-              label: "Casamento",
-              value: "wedding",
-            },
-            {
-              label: "Aniversário",
-              value: "birthday",
-            },
-            {
-              label: "Corporativo",
-              value: "corporate",
-            },
-            {
-              label: "Outro",
-              value: "other",
-            },
-          ]}
-          placeholder="Selecione como conheceu a gente"
-          description="Evento"
-        />
-
-        <Input type="date" placeholder="Data do evento" />
-        <Input type="number" placeholder="Número de convidados" />
-
-        <div className="flex items-center space-x-2">
-          <Checkbox />
-          <label>Bar xyz</label>
-        </div>
-        <div className="flex items-center space-x-2">
-          <Checkbox />
-          <label>Bar xyz</label>
-        </div>
-        <div className="flex items-center space-x-2">
-          <Checkbox />
-          <label>Bar xyz</label>
-        </div>
-        <div className="flex items-center space-x-2">
-          <Checkbox />
-          <label>Bar xyz</label>
-        </div>
-
+          className="max-w-xs"
+          label="Favorite Animal"
+          placeholder="Select an animal"
+        >
+          {animals.map((animal) => (
+            <SelectItem key={animal.key}>{animal.label}</SelectItem>
+          ))}
+        </Select>
+        <DatePicker label="Birth date" />
+        <NumberInput placeholder="Enter the amount" />
+        <CheckboxGroup
+          className="col-span-4"
+          defaultValue={["buenos-aires", "london"]}
+          label="Select cities"
+          orientation="horizontal"
+        >
+          <Checkbox value="buenos-aires">Buenos Aires</Checkbox>
+          <Checkbox value="sydney">Sydney</Checkbox>
+          <Checkbox value="san-francisco">San Francisco</Checkbox>
+          <Checkbox value="london">London</Checkbox>
+          <Checkbox value="tokyo">Tokyo</Checkbox>
+        </CheckboxGroup>
         <Input
           type="text"
           className="col-span-2"
           placeholder="Buscar endereço"
         />
-
         <Button>Buscar</Button>
         <div className="flex col-span-4 p-24 bg-graydark-6 text-white items-center justify-center">
           google maps
         </div>
-
-        <RadioGroup defaultValue="option-one">
-          <div className="flex items-center space-x-2">
-            <RadioGroupItem value="option-one" id="option-one" />
-            <Label htmlFor="option-one">Option One</Label>
-          </div>
-          <div className="flex items-center space-x-2 col-span-1">
-            <RadioGroupItem value="option-two" id="option-two" />
-            <Label htmlFor="option-two">Option Two</Label>
-          </div>
-          <div className="flex items-center space-x-2">
-            <RadioGroupItem value="option-two" id="option-two" />
-            <Label htmlFor="option-two">Option Two</Label>
-          </div>
-          <div className="flex items-center space-x-2">
-            <RadioGroupItem value="option-two" id="option-two" />
-            <Label htmlFor="option-two">Option Two</Label>
-          </div>
+        <RadioGroup
+          label="Select your favorite city"
+          className="col-span-4"
+          orientation="horizontal"
+        >
+          <Radio value="buenos-aires">Buenos Aires</Radio>
+          <Radio value="sydney">Sydney</Radio>
+          <Radio value="san-francisco">San Francisco</Radio>
+          <Radio value="london">London</Radio>
+          <Radio value="tokyo">Tokyo</Radio>
         </RadioGroup>
+        <Input type="text" placeholder="Nome" />
+        <Input type="email" placeholder="Email" />
+        <Input type="tel" placeholder="Telefone" />
+        <Textarea
+          className="col-span-4"
+          placeholder="Digite sua observacao"
+          label="Observacao"
+        />
+        <Button>Enviar</Button>
       </div>
     </ContainerSection>
   );
