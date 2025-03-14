@@ -3,6 +3,7 @@
 import { TemplateContentType, TemplateType } from "@/types/common.type";
 import { useState } from "react";
 import { LuPlay } from "react-icons/lu";
+import { ContainerSection } from "../container-section";
 
 export function HeroSection({
   title,
@@ -12,15 +13,13 @@ export function HeroSection({
   content,
 }: TemplateType) {
   return (
-    <section
-      id={navbar_name}
-      className="h-screen w-full relative flex bg-graydark-3 bg-cover bg-center bg-no-repeat"
-      aria-label={navbar_name}
+    <ContainerSection
+      className="h-screen w-full relative bg-graydark-3 bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 70%), url(${background.image_url})`,
       }}
     >
-      <div className="container w-full grid grid-cols-12">
+      <div className="container w-full items-center justify-center grid grid-cols-12">
         <header className="col-span-8 flex flex-col gap-3">
           <h1
             className="text-6xl font-bold text-graydark-12"
@@ -44,7 +43,7 @@ export function HeroSection({
           <ModalVideo {...content} />
         </figure>
       </div>
-    </section>
+    </ContainerSection>
   );
 }
 

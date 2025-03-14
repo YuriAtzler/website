@@ -10,5 +10,5 @@ export function ContainerPage({ children }: PropsWithChildren) {
     AOS.init();
   }, []);
 
-  return <main>{children}</main>;
+  return <main className="overflow-x-hidden">{children}</main>;
 }

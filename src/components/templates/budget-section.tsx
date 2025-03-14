@@ -31,27 +31,40 @@ export function BudgetSection() {
   return (
     <ContainerSection>
       <div className="container grid grid-cols-4 gap-3">
-        <Select className="max-w-xs" label="Select an animal">
-          {animals.map((animal) => (
-            <SelectItem key={animal.key}>{animal.label}</SelectItem>
-          ))}
-        </Select>
         <Select
           className="max-w-xs"
-          label="Favorite Animal"
+          variant="bordered"
+          size="sm"
           placeholder="Select an animal"
         >
           {animals.map((animal) => (
             <SelectItem key={animal.key}>{animal.label}</SelectItem>
           ))}
         </Select>
-        <DatePicker label="Birth date" />
-        <NumberInput placeholder="Enter the amount" />
+        <Select
+          className="max-w-xs"
+          placeholder="Select an animal"
+          variant="bordered"
+          size="sm"
+        >
+          {animals.map((animal) => (
+            <SelectItem key={animal.key}>{animal.label}</SelectItem>
+          ))}
+        </Select>
+        <DatePicker size="sm" variant="bordered" />
+        <Input
+          type="number"
+          placeholder="Digite um valor"
+          variant="bordered"
+          size="sm"
+        />
+
         <CheckboxGroup
           className="col-span-4"
           defaultValue={["buenos-aires", "london"]}
           label="Select cities"
           orientation="horizontal"
+          size="sm"
         >
           <Checkbox value="buenos-aires">Buenos Aires</Checkbox>
           <Checkbox value="sydney">Sydney</Checkbox>
@@ -63,8 +76,12 @@ export function BudgetSection() {
           type="text"
           className="col-span-2"
           placeholder="Buscar endereço"
+          variant="bordered"
+          size="sm"
         />
-        <Button>Buscar</Button>
+        <Button size="sm" variant="solid">
+          Buscar
+        </Button>
         <div className="flex col-span-4 p-24 bg-graydark-6 text-white items-center justify-center">
           google maps
         </div>

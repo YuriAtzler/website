@@ -1,8 +1,12 @@
+import { cn } from "@/lib/utils";
 import { PropsWithChildren } from "react";
 
-export function ContainerSection({ children }: PropsWithChildren) {
+export function ContainerSection({
+  children,
+  ...props
+}: PropsWithChildren<React.HTMLAttributes<HTMLDivElement>>) {
   return (
-    <section className="w-full py-24 flex">
+    <section {...props} className={cn("w-full py-24 flex", props.className)}>
       {children}
     </section>
   );
