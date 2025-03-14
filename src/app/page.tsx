@@ -1,3 +1,4 @@
+
 import { ContainerPage } from "@/components/container-page";
 import { AboutSection } from "@/components/templates/about-section";
 import { BudgetSection } from "@/components/templates/budget-section";
@@ -10,9 +11,6 @@ import mock from "@/mock/mock.json";
 import { TemplateType } from "@/types/common.type";
 
 export default async function Home() {
-  const res = await fetch("http://localhost:3000/api/pages");
-  const posts = await res.json();
-  console.log(posts);
 
   return (
     <ContainerPage>
