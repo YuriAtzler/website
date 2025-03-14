@@ -34,7 +34,7 @@ export function CarouselSection() {
   return (
     <section
       id="carousel"
-      className="w-full py-24 flex justify-center"
+      className="w-full py-24 flex"
       aria-label="Carrosel"
     >
       <div className="container w-full flex flex-col gap-6">

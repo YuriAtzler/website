@@ -10,7 +10,7 @@ export function AboutSection({
   return (
     <section
       id={navbar_name}
-      className="w-full py-24 flex items-center justify-center"
+      className="w-full py-24 flex"
       aria-label="Sobre a Mint"
     >
       <div className="container w-full grid grid-cols-12 gap-12">

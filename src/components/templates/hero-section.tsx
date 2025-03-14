@@ -14,7 +14,7 @@ export function HeroSection({
   return (
     <section
       id={navbar_name}
-      className="h-screen w-full relative flex items-center bg-graydark-3 justify-center bg-cover bg-center bg-no-repeat"
+      className="h-screen w-full relative flex bg-graydark-3 bg-cover bg-center bg-no-repeat"
       aria-label={navbar_name}
       style={{
         backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0) 70%), url(${background.image_url})`,

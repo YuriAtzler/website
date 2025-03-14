@@ -2,7 +2,7 @@ export function CardsSection() {
   return (
     <section
       id="cards"
-      className="w-full py-24 flex items-center justify-center"
+      className="w-full py-24 flex"
       aria-label="Cards"
     >
       <div className="container flex flex-col w-full gap-12">
