@@ -9,7 +9,6 @@ export function HeroSection({
   title,
   subtitle,
   background,
-  navbar_name,
   content,
 }: TemplateType) {
   return (

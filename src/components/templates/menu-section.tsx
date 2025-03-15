@@ -1,7 +1,6 @@
 "use client";
 
 import { Tab, Tabs } from "@heroui/tabs";
-import { Card, CardBody } from "@heroui/card";
 
 export function MenuSection() {
   return (

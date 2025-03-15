@@ -1,16 +1,12 @@
 "use client";
 
-import {
-  NavBarType,
-  NavBarVariantsFunction,
-} from "@/types/components/nav-bar.type";
-import { cva } from "class-variance-authority";
+import { NavBarType } from "@/types/components/nav-bar.type";
 
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from "@heroui/navbar";
 import { Link } from "@heroui/link";
 import { Button } from "@heroui/button";
 
-export function NavBar({ style = "full", links }: NavBarType) {
+export function NavBar({ links }: NavBarType) {
   return (
     <Navbar isBlurred className="fixed bg-graydark-2/50 text-white">
       <NavbarBrand>
