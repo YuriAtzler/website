@@ -1,4 +1,5 @@
 import { TemplateType } from "@/types/common.type";
+import { Image } from "@heroui/image";
 import { LuCheck } from "react-icons/lu";
 
 export function AboutSection({
@@ -72,13 +73,15 @@ export function AboutSection({
         </article>
         <figure
           data-aos="zoom-in-down"
-          className="col-span-6 flex justify-center items-center"
           role="img"
           aria-label="Imagem ilustrativa"
+          className="flex items-center col-span-6 justify-center"
         >
-          <div
-            className="w-full aspect-video bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${content.about?.picture_url})` }}
+          <Image
+            isZoomed
+            alt="HeroUI Album Cover"
+            src={content.about?.picture_url}
+            width="100%"
           />
         </figure>
       </div>

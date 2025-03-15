@@ -8,7 +8,6 @@ import { RadioGroup, Radio } from "@heroui/radio";
 import { Select, SelectItem } from "@heroui/select";
 import { Textarea } from "@heroui/input";
 import { DatePicker } from "@heroui/date-picker";
-
 import { addToast } from "@heroui/toast";
 export const animals = [
   { key: "cat", label: "Cat" },
